@@ -420,7 +420,6 @@ body {
 .social-list__item {
   width: 2.75rem;
   height: 2.75rem;
-  margin-bottom: 2.143rem;
   fill: #afb1b8;
   border-radius: 50%;
   cursor: pointer;
@@ -574,27 +573,28 @@ body {
 /*------------------------------------*/
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 4.375rem;
+  gap: 3.75rem;
   align-items: center;
   justify-content: center;
+  width: 100vw;
   color: #fff;
+  text-align: center;
   background-color: #2f303a;
 }
 .footer__contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  gap: 0.5rem;
+  align-items: center;
 }
 .footer__adress {
-  margin-bottom: 0.563rem;
   font-style: normal;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
 }
 .footer__adress__mail {
-  margin-bottom: 0.563rem;
   color: #fff;
   line-height: 1.5rem;
   letter-spacing: 0.72px;
@@ -603,7 +603,6 @@ body {
   opacity: 0.6;
 }
 .footer__adress__phone {
-  margin-bottom: 3.75rem;
   color: #fff;
   line-height: 1.5rem;
   letter-spacing: 0.03em;
@@ -620,13 +619,11 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 1.875rem;
-  align-self: center;
-  justify-content: space-between;
-  text-align: left;
+  gap: 1.25rem;
+  text-align: center;
 }
 .footer__join-us__header {
-  width: 206px;
+  display: block;
   font-weight: font-weight(bold);
   font-size: 14px;
   line-height: 1rem;
@@ -638,9 +635,9 @@ body {
 .newsletter {
   display: flex;
   flex-direction: column;
-  gap: 1.875rem;
+  gap: 1.25rem;
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 3.75rem;
 }
 .newsletter__header {
   font-size: 14px;
@@ -650,11 +647,13 @@ body {
 }
 .newsletter__form {
   position: relative;
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 0.75rem;
 }
 .newsletter__form__email {
-  width: 22.375rem;
+  width: 95vw;
   height: 3.125rem;
   padding-left: 1.375rem;
   color: #fff;
