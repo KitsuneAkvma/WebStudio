@@ -31,3 +31,14 @@ body {
     align-items: center;
   }
 }
+
+.active {
+  &.navbar__burger > .navbar__burger__btn {
+    &::after {
+      transform: rotate(45deg);
+    }
+    &::before {
+      transform: rotate(-45deg);
+    }
+  }
+}

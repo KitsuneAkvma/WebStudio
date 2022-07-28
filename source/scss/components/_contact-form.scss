@@ -9,27 +9,29 @@
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  display: none;
 }
 .modal {
   position: fixed;
   top: 0;
   right: 0;
   z-index: 3;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
   height: 100vh;
 
   background-color: rgba(0, 0, 0, 0.2);
   transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 1s cubic-bezier(0.4, 0, 0.2, 1), opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 
   &__window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
 
-    width: 528px;
-    height: 581px;
+    width: 94vw;
+    height: 38.063rem;
 
     background-color: color(main);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -129,7 +131,10 @@
 
     font-size: 14px;
   }
-
+  &__agreement {
+    margin-left: 0.5rem;
+    color: color(light-font);
+  }
   &__agreement--link {
     color: color(company);
     text-decoration: underline;

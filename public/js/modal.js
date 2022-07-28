@@ -1,33 +1,33 @@
 // Modal contact-form window
-(() => {
-  const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    modal: document.querySelector('[data-modal]'),
-  };
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-
-  function toggleModal() {
-    refs.modal.classList.toggle('isHidden');
-  }
-})();
-
-var brugerRefs = {
-  openBurgerBtn: document.querySelector('[burger-open]'),
-  closeBurgerBtn: document.querySelector('[burger-close]'),
-  burgerMenu: document.querySelector('[burger-widnow'),
+const refs = {
+  openModalBtn: document.querySelector('[data-modal-open]'),
+  closeModalBtn: document.querySelector('[data-modal-close]'),
+  modal: document.querySelector('[data-modal]'),
 };
 
-// Burger Menu
-/*
-brugerRefs.openBurgerBtn.addEventListener('click', toggleBurger);
-brugerRefs.closeBurgerBtn.addEventListener('click', toggleBurger);
+refs.openModalBtn.addEventListener('click', toggleModal);
+refs.closeModalBtn.addEventListener('click', toggleModal);
 
-function toggleBurger() {
-  brugerRefs.navbar__burger.setAttribute('[burger-close]');
-  brugerRefs.navbar__burger.removeAttribute('[burger-open]');
-  brugerRefs.burger - window.classList.toggle('isHidden');
+function toggleModal() {
+  refs.modal.classList.toggle('isHidden');
 }
-*/
+
+// Burger Menu
+
+const burgerRefs = {
+  burgerBtn: document.querySelector('.navbar__burger'),
+  burgerWindow: document.querySelector('.burger-window'),
+};
+
+burgerRefs.burgerBtn.addEventListener('click', () => {
+  burgerRefs.burgerBtn.classList.toggle('active');
+  burgerRefs.burgerWindow.classList.toggle('isHidden');
+});
+
+document.querySelectorAll('.burger-window__nav-list__item').forEach(n =>
+  n.addEventListener('click', () => {
+    burgerRefs.burgerBtn.classList.remove('active');
+    burgerRefs.burgerWindow.classList.remove('isHidden');
+  })
+);

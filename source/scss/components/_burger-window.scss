@@ -1,0 +1,104 @@
+.burger-window {
+  position: fixed;
+  z-index: 2;
+
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100vw;
+  height: 100vh;
+
+  background-color: color(main);
+  transition: transform 500ms ease-in-out, opacity 1s ease-out, visibility 1s ease-out;
+
+  &__nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 15.9rem;
+
+    list-style: none;
+  }
+
+  &__nav-list__item--link {
+    font-size: 40px;
+    color: color(main-font);
+    text-decoration: none;
+    font-weight: weight(medium);
+    line-height: 2.938rem;
+    letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: color(company);
+      transform: scale(2.25);
+    }
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    list-style: none;
+  }
+  &__contact-list__item--phone {
+    font-size: 34px;
+    font-weight: weight(medium);
+    color: color(company);
+    line-height: 2.5rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: filter 250ms ease-out;
+
+    &:hover {
+      filter: brightness(75%);
+    }
+  }
+  &__contact-list__item--email {
+    font-size: 24px;
+    color: color(light-font);
+    font-weight: weight(medium);
+    line-height: 1.75rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: filter 250ms ease-out;
+
+    &:hover {
+      filter: brightness(65%);
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    gap: 0.625rem;
+    justify-content: center;
+
+    list-style: none;
+  }
+  &__social-list__item {
+    padding-left: 0.625rem;
+    border-left: 1px color(light-font) solid;
+    &:first-child {
+      border: none;
+    }
+  }
+  &__social-list__item--link {
+    color: color(company);
+    font-weight: weight(medium);
+    font-size: 18px;
+    line-height: 1.375rem;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: filter 250ms ease-out;
+
+    &:hover {
+      filter: brightness(75%);
+    }
+  }
+}
