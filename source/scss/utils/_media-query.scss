@@ -1,0 +1,121 @@
+/*img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: device(small-monit)) {
+  .portfolio__project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: device(tablet)) {
+  .navbar {
+    justify-content: space-between;
+
+    &__contacts {
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+  }
+
+  .intro {
+    max-height: 25rem;
+    &__overlay {
+      max-height: 25rem;
+    }
+    &__header {
+      width: 22.813rem;
+      font-size: 26px;
+      line-height: 162%;
+    }
+  }
+  .features {
+    margin-block: 3.75rem 2.813rem;
+    &__list {
+      gap: 1.875rem;
+    }
+    &__item {
+      width: 22.125rem;
+    }
+  }
+  .team {
+    &__member__info {
+      width: 22.125rem;
+      height: 33.5rem;
+    }
+    &__member__photo {
+      height: 23.375rem;
+    }
+  }
+  .services {
+    position: absolute;
+    visibility: hidden;
+  }
+  .portfolio__project-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: device(phone)) {
+  .navbar > * {
+    visibility: hidden;
+  }
+} ;*/
+
+@media (min-width: 480px) {
+  .container {
+    max-width: 768px;
+
+    &--logonav {
+      gap: 5.188rem;
+    }
+  }
+  .navbar {
+    height: 5rem;
+    gap: 5.188rem;
+
+    &__navigation {
+      display: block;
+    }
+    &__navigation__buttons {
+      column-gap: 3.75rem;
+    }
+    &__contacts {
+      display: block;
+
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    &__burger {
+      display: none;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 1200px;
+
+    &--logonav {
+      gap: 5.188rem;
+    }
+  }
+  .navbar {
+    height: 5rem;
+    gap: 0;
+    justify-content: space-around;
+
+    &__navigation__buttons {
+      justify-self: flex-start;
+      column-gap: 2.875rem;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    &__contacts {
+      flex-direction: row;
+    }
+  }
+}

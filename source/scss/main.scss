@@ -1,0 +1,22 @@
+@import 'utils/normalize';
+@import 'utils/variables';
+@import 'utils/animations';
+@import 'utils/utility-classes';
+
+@import 'components/icons';
+@import 'components/logo';
+@import 'components/social-list';
+
+@import 'components/navbar';
+@import 'components/footer';
+@import 'components/contact-form';
+
+@import 'components/index_intro'; /*main/agency page*/
+@import 'components/index_features';
+@import 'components/index_services';
+@import 'components/index_team';
+@import 'components/index_team';
+@import 'components/index_clients';
+
+@import 'components/portfolio_projects';
+@import 'utils/media-query';

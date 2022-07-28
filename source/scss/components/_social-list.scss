@@ -1,0 +1,44 @@
+/*--------------------*/
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  gap: 0.625rem;
+  align-items: center;
+  justify-content: center;
+
+  list-style: none;
+
+  &__item {
+    width: 2.75rem;
+    height: 2.75rem;
+    margin-bottom: 2.143rem;
+    fill: color(gray-elements);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item:hover,
+  &__item:focus {
+    background-color: color(company);
+    fill: color(main);
+  }
+
+  &__item--footer {
+    background-color: rgba(255, 255, 255, 0.102);
+    border-radius: 50%;
+    fill: color(main);
+
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__item--footer:hover,
+  &__item--footer:focus {
+    background-color: color(company);
+    opacity: 1;
+  }
+}

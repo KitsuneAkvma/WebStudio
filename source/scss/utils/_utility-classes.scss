@@ -1,0 +1,33 @@
+/*------------------------------------*/
+/*---------------UTILITY--------------*/
+/*------------------------------------*/
+/*---------------CLASSES--------------*/
+/*------------------------------------*/
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Body default values (fonts, colots etc.)*/
+body {
+  color: color(main-font);
+  font-family: $font-main;
+  font-weight: weight(regular);
+  font-style: normal;
+  font-size: 14px;
+
+  background-color: color(main);
+}
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--logonav {
+    display: flex;
+    gap: 5.813rem;
+    align-items: center;
+  }
+}

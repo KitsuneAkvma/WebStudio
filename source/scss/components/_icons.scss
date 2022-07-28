@@ -1,0 +1,77 @@
+/*------------------------------------*/
+/*------------------------------------*/
+/*---------------ICONS----------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+
+  &--envelope,
+  &--smartphone {
+    width: 1.331em;
+    height: 1.331em;
+    vertical-align: bottom;
+  }
+
+  &--antenna-1,
+  &--clock-1,
+  &--diagram-1,
+  &--astronaut-1 {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  &--instagram,
+  &--twitter,
+  &--facebook,
+  &--linkedin {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  &--company-1 {
+    width: 4rem;
+    height: 4rem;
+  }
+  &--company-2,
+  &--company-3,
+  &--company-4,
+  &--company-5,
+  &--company-6 {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  &--X {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  &--checked {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+
+    width: 0.9em;
+    height: 1em;
+
+    fill: color(main);
+  }
+  &--send {
+    position: absolute;
+    top: 10px;
+    right: 28px;
+
+    width: 1.5rem;
+    height: 1.5rem;
+
+    fill: color(main);
+
+    transition: transform 1000ms ease-out;
+  }
+}

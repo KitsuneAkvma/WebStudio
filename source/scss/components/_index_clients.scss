@@ -1,0 +1,38 @@
+/*--------------------*/
+.clients {
+  &__list {
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    margin-bottom: 3.75rem;
+
+    list-style: none;
+  }
+  &__header {
+    margin-block: 5.875rem 3.125rem;
+
+    text-align: center;
+    font-size: 36px;
+    line-height: 2.625rem;
+    letter-spacing: 0.03em;
+    font-weight: weight(bold);
+  }
+  &__item {
+    width: 10.625rem;
+    height: 5.75rem;
+
+    border: 1px solid color(gray-elements);
+    border-radius: 4px;
+    fill: color(gray-elements);
+
+    cursor: pointer;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms;
+  }
+  &__item:hover,
+  &__item:focus {
+    border-color: color(company);
+    fill: color(company);
+
+    transform: scale(1.1);
+  }
+}

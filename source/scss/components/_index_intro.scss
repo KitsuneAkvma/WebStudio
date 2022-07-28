@@ -1,0 +1,76 @@
+/*------------------------------------*/
+/*------------------------------------*/
+/*---------------INDEX----------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+.intro {
+  width: 100vw;
+  height: 25rem;
+  justify-content: center;
+
+  color: color(main);
+  font-weight: weight(blck);
+  text-align: center;
+  letter-spacing: 0.06em;
+  line-height: 3.75rem;
+
+  background-image: url('../images/header-img.jpg');
+  background-size: cover;
+
+  &__overlay {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+
+    background-color: #2f303a66;
+  }
+  &__header {
+    margin-top: 12.5rem;
+
+    display: inline-block;
+    width: 22.813rem;
+
+    font-size: 26px;
+    line-height: 2.143rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__button {
+    padding: 10px 41px 10px 42px;
+    margin-bottom: 12.5rem;
+
+    color: #fff;
+    font-family: $font-main;
+    font-weight: weight(bold);
+    font-size: 16px;
+    line-height: 2.143rem;
+
+    background-color: color(company);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      box-shadow 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-radius 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+      font 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__button:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 18px;
+    background-color: #a621f3;
+    font-size: 20px;
+  }
+}

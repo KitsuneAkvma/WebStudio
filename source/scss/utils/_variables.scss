@@ -1,0 +1,35 @@
+//------------------------------------
+//------------------------------------
+//-------------VARIABLES--------------
+//------------------------------------
+//------------------------------------
+//variables maps just to keep everything packed up
+$colors: (
+  'main': #fff,
+  'secondary': #f5f4fa,
+  'company': #2196f3,
+  'drk-background': #2f303a,
+  'main-font': #212121,
+  'light-font': #757575,
+  'gray-elements': #afb1b8,
+);
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 700,
+  'blck': 900,
+);
+
+//Those are not in map because of problems with usage - some websites understands font-family variables but others shows roboto font as times new roman
+
+$font-main: Roboto, sans-serif;
+$font-logo: Raleway, sans-serif;
+
+//Shortcuts to get map's item
+
+@function color($color-name) {
+  @return map-get($colors, $color-name);
+}
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}

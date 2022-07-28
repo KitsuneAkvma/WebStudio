@@ -1,0 +1,29 @@
+/*------------------------------------*/
+/*------------------------------------*/
+/*----------------LOGO----------------*/
+/*------------------------------------*/
+/*------------------------------------*/
+
+.logo {
+  font-family: $font-logo;
+  font-weight: weight(bold);
+  font-size: 26px;
+  line-height: 1.938rem;
+  letter-spacing: 0.03em;
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+  }
+  &__link--footer {
+    display: block;
+    margin-block: 3.75rem 1.25rem;
+
+    color: color(main);
+
+    user-select: none;
+  }
+  &__colored {
+    color: color(company);
+  }
+}

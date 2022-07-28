@@ -1,0 +1,53 @@
+/*--------------------*/
+
+.features {
+  margin-block: 5.875rem;
+  display: flex;
+  justify-content: center;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.875rem;
+    width: 95vw;
+
+    list-style: none;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+  }
+
+  &__item__bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.25rem;
+    width: 100%;
+    height: 7.5rem;
+
+    background-color: color(secondary);
+
+    border-radius: 4px;
+  }
+  &__item__icon {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+
+  &__item__header {
+    font-size: 14px;
+    font-weight: weight(bold);
+  }
+  &__item__text {
+    color: color(light-font);
+    line-height: 1.5rem;
+    letter-spacing: 0.42px;
+  }
+}
