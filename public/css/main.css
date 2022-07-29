@@ -308,11 +308,6 @@ body {
   font-style: normal;
   font-size: 14px;
   background-color: #fff;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-body::-webkit-scrollbar {
-  display: none;
 }
 
 img {
@@ -516,6 +511,7 @@ img {
 .navbar__contacts {
   display: flex;
   display: none;
+  font-size: 10px;
   justify-content: flex-end;
 }
 .navbar__contacts__email, .navbar__contacts__phone {
@@ -1028,11 +1024,6 @@ img {
   background-image: url("../images/header-img.jpg");
   background-size: cover;
 }
-@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .intro .intro {
-    background-image: url("../images/header-img2x.jp");
-  }
-}
 .intro__overlay {
   display: flex;
   flex-direction: column;
@@ -1482,9 +1473,6 @@ img {
   .container {
     width: 95vw;
   }
-  .container--logonav {
-    gap: 1rem;
-  }
   .navbar {
     height: 5rem;
   }
@@ -1493,7 +1481,7 @@ img {
   }
   .navbar__navigation__buttons {
     -moz-column-gap: 3.75rem;
-         column-gap: 3.75rem;
+    column-gap: 3.75rem;
   }
   .navbar__contacts {
     display: flex;
@@ -1543,7 +1531,7 @@ img {
   .navbar__navigation__buttons {
     justify-self: flex-start;
     -moz-column-gap: 2.875rem;
-         column-gap: 2.875rem;
+    column-gap: 2.875rem;
   }
 }
 @media (min-width: 1200px) {
@@ -1593,4 +1581,13 @@ img {
     width: 33rem;
     height: 36.313rem;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+/*@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (-o-min-device-pixel-ratio: 2/1),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .intro {
+    background-image: url('../images/header-img.jp');
+  }
+}*//*# sourceMappingURL=main.css.map */
