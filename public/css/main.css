@@ -315,6 +315,12 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .container {
   width: 93.7vw;
   margin: 0 auto;
@@ -746,7 +752,7 @@ body::-webkit-scrollbar {
 }
 .modal__window {
   position: relative;
-  width: 94vw;
+  width: 28.125rem;
   height: 38.063rem;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1022,6 +1028,11 @@ body::-webkit-scrollbar {
   line-height: 3.75rem;
   background-image: url("../images/header-img.jpg");
   background-size: cover;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .intro .intro {
+    background-image: url("../images/header-img2x.jp");
+  }
 }
 .intro__overlay {
   display: flex;
@@ -1537,6 +1548,9 @@ body::-webkit-scrollbar {
   }
 }
 @media (min-width: 1200px) {
+  .intro {
+    height: 37.5rem;
+  }
   .navbar__contacts {
     flex-direction: row;
   }
@@ -1575,5 +1589,9 @@ body::-webkit-scrollbar {
   }
   .newsletter__form__email {
     width: 21.875rem;
+  }
+  .modal__window {
+    width: 33rem;
+    height: 36.313rem;
   }
 }/*# sourceMappingURL=main.css.map */

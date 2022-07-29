@@ -144,6 +144,9 @@
   }
 }
 @media (min-width: 1200px) {
+  .intro {
+    height: 37.5rem;
+  }
   .navbar {
     &__contacts {
       flex-direction: row;
@@ -190,6 +193,12 @@
     }
     &__form__email {
       width: 21.875rem;
+    }
+  }
+  .modal {
+    &__window {
+      width: 33rem;
+      height: 36.313rem;
     }
   }
 }
