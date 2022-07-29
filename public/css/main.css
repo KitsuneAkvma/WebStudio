@@ -598,7 +598,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 100vw;
-  padding: 3.75rem;
+  padding-block: 3.75rem;
   color: #fff;
   text-align: center;
   background-color: #2f303a;
@@ -656,8 +656,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
-  align-self: center;
-  margin-bottom: 3.75rem;
+  align-items: center;
 }
 .newsletter__header {
   font-size: 14px;
@@ -673,7 +672,7 @@ img {
   gap: 0.75rem;
 }
 .newsletter__form__email {
-  width: 95vw;
+  width: 93vw;
   height: 3.125rem;
   padding-left: 1.375rem;
   color: #fff;
