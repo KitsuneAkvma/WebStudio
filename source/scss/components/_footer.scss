@@ -12,6 +12,7 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
+  padding: 3.75rem;
 
   color: color(main);
   text-align: center;
@@ -87,7 +88,7 @@
   flex-direction: column;
   gap: 1.25rem;
   align-self: center;
-  
+
   margin-bottom: 3.75rem;
 
   &__header {

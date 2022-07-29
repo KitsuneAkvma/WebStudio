@@ -592,6 +592,7 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
   width: 100vw;
+  padding: 3.75rem;
   color: #fff;
   text-align: center;
   background-color: #2f303a;
