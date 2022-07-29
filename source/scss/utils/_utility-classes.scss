@@ -17,9 +17,15 @@ body {
   font-size: 14px;
 
   background-color: color(main);
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 .container {
-  max-width: 480px;
+  width: 93.7vw;
   margin: 0 auto;
   display: flex;
   flex-direction: column;

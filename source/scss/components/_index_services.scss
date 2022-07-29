@@ -2,12 +2,12 @@
 
 .services {
   display: none;
+  flex-direction: column;
+  gap: 3.125rem;
   margin-bottom: 5.25em;
   text-align: center;
 
   &__header {
-    margin-bottom: 3.125rem;
-
     font-size: 36px;
     font-weight: weight(bold);
   }
@@ -15,7 +15,6 @@
     position: relative;
 
     flex-wrap: wrap;
-    width: 100vw;
 
     column-gap: 2.143rem;
     list-style: none;

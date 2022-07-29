@@ -21,14 +21,14 @@
   }
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 1.875rem;
     padding-bottom: 3.75rem;
 
     list-style: none;
   }
   &__member {
-    width: 95.5vw;
+    width: 93.7vw;
     height: 38.875rem;
     background-color: color(main);
 

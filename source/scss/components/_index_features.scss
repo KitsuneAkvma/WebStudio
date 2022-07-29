@@ -7,11 +7,10 @@
 
   &__list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 1.875rem;
-    width: 95vw;
 
     list-style: none;
   }
