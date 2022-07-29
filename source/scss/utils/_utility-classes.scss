@@ -33,12 +33,13 @@ body {
 }
 
 .active {
+  &::before {
+    transform: translateY(6px) rotate(135deg);
+  }
+  &::after {
+    transform: translateY(-11px) rotate(-135deg);
+  }
   &.navbar__burger > .navbar__burger__btn {
-    &::after {
-      transform: rotate(45deg);
-    }
-    &::before {
-      transform: rotate(-45deg);
-    }
+    transform: scale(0);
   }
 }
