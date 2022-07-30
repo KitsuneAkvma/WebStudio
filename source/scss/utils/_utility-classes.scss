@@ -48,3 +48,11 @@ img {
     transform: scale(0);
   }
 }
+
+.fixed-btn {
+  &--burger {
+    position: fixed;
+    top: 0.8rem;
+    right: 1.5rem;
+  }
+}

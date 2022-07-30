@@ -105,6 +105,7 @@
   .team {
     &__member {
       width: 22.125rem;
+      padding-bottom: 1.8rem;
     }
     &__member__photo {
       height: 23.375rem;
@@ -133,6 +134,14 @@
     }
     &__form__email {
       width: 28.125rem;
+    }
+  }
+  .portfolio {
+    &__project-list {
+      justify-content: flex-start;
+    }
+    &__project-list__item {
+      width: 22.125rem;
     }
   }
 }
@@ -232,6 +241,14 @@
     &__window {
       width: 33rem;
       height: 36.313rem;
+    }
+  }
+  .portfolio {
+    &__project-list {
+      justify-content: center;
+    }
+    &__project-list__item {
+      width: 23.125rem;
     }
   }
 }

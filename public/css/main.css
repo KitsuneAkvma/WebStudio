@@ -339,6 +339,12 @@ img {
   transform: scale(0);
 }
 
+.fixed-btn--burger {
+  position: fixed;
+  top: 0.8rem;
+  right: 1.5rem;
+}
+
 /*------------------------------------*/
 /*------------------------------------*/
 /*---------------ICONS----------------*/
@@ -532,7 +538,6 @@ img {
   fill: #2196f3;
 }
 .navbar__burger {
-  position: relative;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -1181,7 +1186,8 @@ img {
 }
 .team__member {
   width: 93.7vw;
-  height: 38.875rem;
+  height: auto;
+  padding-bottom: 1.8rem;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 4px;
@@ -1234,7 +1240,8 @@ img {
 }
 .team__member {
   width: 93.7vw;
-  height: 38.875rem;
+  height: auto;
+  padding-bottom: 1.8rem;
   background-color: #fff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-bottom-left-radius: 4px;
@@ -1496,6 +1503,7 @@ img {
   }
   .team__member {
     width: 22.125rem;
+    padding-bottom: 1.8rem;
   }
   .team__member__photo {
     height: 23.375rem;
@@ -1514,6 +1522,12 @@ img {
   }
   .newsletter__form__email {
     width: 28.125rem;
+  }
+  .portfolio__project-list {
+    justify-content: flex-start;
+  }
+  .portfolio__project-list__item {
+    width: 22.125rem;
   }
 }
 @media (min-width: 768px) {
@@ -1580,6 +1594,12 @@ img {
   .modal__window {
     width: 33rem;
     height: 36.313rem;
+  }
+  .portfolio__project-list {
+    justify-content: center;
+  }
+  .portfolio__project-list__item {
+    width: 23.125rem;
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
