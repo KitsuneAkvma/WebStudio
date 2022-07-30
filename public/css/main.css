@@ -1526,9 +1526,6 @@ img {
   .portfolio__project-list {
     justify-content: flex-start;
   }
-  .portfolio__project-list__item {
-    width: 22.125rem;
-  }
 }
 @media (min-width: 768px) {
   .container {
