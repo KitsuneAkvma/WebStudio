@@ -7,5 +7,6 @@
 - Including responsive web design
 - Included mobile-first approach (Whole website has been transformed to mobile layout)
 - Burger menu has been added
+- Bitmaps has been optimized for retina 2x
 
 ----- Problems encounted -----
