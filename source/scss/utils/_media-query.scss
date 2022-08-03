@@ -69,14 +69,13 @@
   }
   .navbar {
     height: 5rem;
+    padding-inline: 0.6rem;
 
     &__navigation {
       display: block;
     }
     &__navigation__buttons {
-      -webkit-column-gap: 3.75rem;
-      -moz-column-gap: 3.75rem;
-      column-gap: 3.75rem;
+      column-gap: max(1rem);
     }
     &__contacts {
       display: -webkit-box;

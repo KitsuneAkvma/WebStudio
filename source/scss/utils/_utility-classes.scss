@@ -32,7 +32,7 @@ img {
 
   &--logonav {
     display: flex;
-    gap: 5.813rem;
+    gap: max(0.1rem);
     align-items: center;
   }
 }
