@@ -140,50 +140,52 @@
       </div>
 
       <header>
-        <!--Navbar elements-->
+        <div class="container">
+          <!--Navbar elements-->
 
-        <div class="navbar">
-          <div class="container--logonav">
-            <div class="logo navbar__logo">
-              <a class="logo__link" href="index.html"
-                ><span class="logo__colored">Web</span>Studio</a
+          <div class="navbar">
+            <div class="container--logonav">
+              <div class="logo navbar__logo">
+                <a class="logo__link" href="index.html"
+                  ><span class="logo__colored">Web</span>Studio</a
+                >
+              </div>
+
+              <nav class="navbar__navigation">
+                <ul class="navbar__navigation__buttons">
+                  <li class="navbar__navigation__button" id="active-nav">
+                    <a class="navbar__navigation__button--link" href="index.html"
+                      >Agencja</a
+                    >
+                  </li>
+                  <li class="navbar__navigation__button">
+                    <a class="navbar__navigation__button--link" href="portfolio.html"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li class="navbar__navigation__button">
+                    <a class="navbar__navigation__button--link" href="#">Kontakt</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="navbar__contacts">
+              <a class="navbar__contacts__email" href="mailto:info@devstudio.com">
+                <svg class="icon icon--envelope navbar__contacts__icon">
+                  <use href="public/images/icons.svg#icon-envelope"></use></svg
+                >info@devstudio.com</a
+              >
+              <a class="navbar__contacts__phone" href="tel:111-111-111"
+                ><svg class="icon icon--smartphone navbar__contacts__icon">
+                  <use href="public/images/icons.svg#icon-smartphone"></use></svg
+                >+48 111 111 111</a
               >
             </div>
 
-            <nav class="navbar__navigation">
-              <ul class="navbar__navigation__buttons">
-                <li class="navbar__navigation__button" id="active-nav">
-                  <a class="navbar__navigation__button--link" href="index.html"
-                    >Agencja</a
-                  >
-                </li>
-                <li class="navbar__navigation__button">
-                  <a class="navbar__navigation__button--link" href="portfolio.html"
-                    >Portfolio</a
-                  >
-                </li>
-                <li class="navbar__navigation__button">
-                  <a class="navbar__navigation__button--link" href="#">Kontakt</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-
-          <div class="navbar__contacts">
-            <a class="navbar__contacts__email" href="mailto:info@devstudio.com">
-              <svg class="icon icon--envelope navbar__contacts__icon">
-                <use href="public/images/icons.svg#icon-envelope"></use></svg
-              >info@devstudio.com</a
-            >
-            <a class="navbar__contacts__phone" href="tel:111-111-111"
-              ><svg class="icon icon--smartphone navbar__contacts__icon">
-                <use href="public/images/icons.svg#icon-smartphone"></use></svg
-              >+48 111 111 111</a
-            >
-          </div>
-
-          <div class="navbar__burger">
-            <div class="navbar__burger__btn"></div>
+            <div class="navbar__burger">
+              <div class="navbar__burger__btn"></div>
+            </div>
           </div>
         </div>
       </header>
