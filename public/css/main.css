@@ -322,6 +322,7 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .container--logonav {
   display: flex;
@@ -1417,14 +1418,13 @@ img {
   }
   .navbar {
     height: 5rem;
-    padding-inline: 0.6rem;
   }
   .navbar__navigation {
     display: block;
   }
   .navbar__navigation__buttons {
-    -moz-column-gap: 1rem;
-         column-gap: 1rem;
+    -moz-column-gap: 0.8rem;
+         column-gap: 0.8rem;
   }
   .navbar__contacts {
     display: flex;
@@ -1482,6 +1482,9 @@ img {
   }
 }
 @media (min-width: 1200px) {
+  .container {
+    width: 110.625rem;
+  }
   .intro {
     height: 37.5rem;
   }
