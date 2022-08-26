@@ -1,6 +1,8 @@
 .burger-window {
   position: fixed;
   z-index: 2;
+  top: 0;
+  right: 0;
 
   padding: 3rem 2.5rem;
   display: flex;

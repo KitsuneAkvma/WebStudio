@@ -39,6 +39,7 @@ img {
 }
 
 .active {
+  transform: translateX(10px) translateY(-3px);
   &::before {
     transform: translateY(6px) rotate(135deg);
   }
@@ -47,6 +48,10 @@ img {
   }
   &.navbar__burger > .navbar__burger__btn {
     transform: scale(0);
+  }
+  &.navbar__burger::after,
+  &.navbar__burger::before {
+    background-color: color(company);
   }
 }
 

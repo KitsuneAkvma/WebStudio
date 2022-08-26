@@ -330,6 +330,9 @@ img {
   align-items: center;
 }
 
+.active {
+  transform: translateX(10px) translateY(-3px);
+}
 .active::before {
   transform: translateY(6px) rotate(135deg);
 }
@@ -338,6 +341,9 @@ img {
 }
 .active.navbar__burger > .navbar__burger__btn {
   transform: scale(0);
+}
+.active.navbar__burger::after, .active.navbar__burger::before {
+  background-color: #2196f3;
 }
 
 .fixed-btn--burger {
@@ -927,6 +933,8 @@ img {
 .burger-window {
   position: fixed;
   z-index: 2;
+  top: 0;
+  right: 0;
   padding: 3rem 2.5rem;
   display: flex;
   flex-direction: column;
