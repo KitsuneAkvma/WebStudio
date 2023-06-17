@@ -255,23 +255,6 @@ summary {
 /*-------------ANIMATIONS-------------*/
 /*------------------------------------*/
 /*------------------------------------*/
-@-webkit-keyframes tilt-shaking {
-  0% {
-    transform: rotate(0deg);
-  }
-  25% {
-    transform: rotate(5deg);
-  }
-  50% {
-    transform: rotate(0eg);
-  }
-  75% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
 @keyframes tilt-shaking {
   0% {
     transform: rotate(0deg);
@@ -430,7 +413,6 @@ img {
   color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .logo__colored {
@@ -480,12 +462,11 @@ img {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 100vw;
+  width: 100%;
   height: 3.75rem;
   border-bottom: 1px solid #ececec;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   /*--------------------*/
 }
@@ -502,13 +483,10 @@ img {
 .navbar__navigation__button {
   position: relative;
   display: block;
-  transition: -webkit-animation 1s cubic-bezier(0.4, 0, 0.2, 1);
   transition: animation 1s cubic-bezier(0.4, 0, 0.2, 1);
-  transition: animation 1s cubic-bezier(0.4, 0, 0.2, 1), -webkit-animation 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .navbar__navigation__button:hover, .navbar__navigation__button:focus {
-  -webkit-animation: tilt-shaking 0.25s infinite;
-          animation: tilt-shaking 0.25s infinite;
+  animation: tilt-shaking 0.25s infinite;
 }
 .navbar__navigation__button--link {
   font-weight: 500;
@@ -574,8 +552,7 @@ img {
 }
 
 #active-nav {
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 #active-nav > .navbar__navigation__button--link {
   color: #2196f3;
@@ -690,9 +667,6 @@ img {
   transition: transform 250ms ease-in, box-shadow 250ms ease-in;
 }
 .newsletter__form__email::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.newsletter__form__email:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .newsletter__form__email::placeholder {
@@ -831,13 +805,6 @@ img {
   padding-block: 1rem;
 }
 .contactForm__input--comment::-moz-placeholder {
-  position: absolute;
-  top: 1rem;
-  left: 1.3rem;
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-}
-.contactForm__input--comment:-ms-input-placeholder {
   position: absolute;
   top: 1rem;
   left: 1.3rem;
@@ -1102,7 +1069,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: 1rem;
 }
 .features__item__bg {
   display: flex;
@@ -1340,7 +1307,6 @@ img {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1368,7 +1334,6 @@ img {
 .portfolio__project-list__image {
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .portfolio__project-list__title {

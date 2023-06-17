@@ -9,7 +9,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 1.875rem;
 
     list-style: none;
@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 0.625rem;
+    gap: 1rem;
   }
 
   &__item__bg {
