@@ -1,5 +1,7 @@
 # WebStudio - Your digital choice!
 
+![WebStudio](/public/images/services1.jpg)
+
 WebStudio is a website project created for a fictitious agency that offers comprehensive digital services. The website serves as a showcase for the agency's services, values, team members, clients, portfolio, and contact information.
 
 ## Description
